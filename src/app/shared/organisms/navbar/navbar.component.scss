@@ -1,0 +1,108 @@
+.sidenav-container {
+  height: 100vh;
+}
+
+.sidebar-content {
+  padding: 16px;
+  width: max-content;
+}
+
+.aula-card {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.navbar {
+    background-color: #034C8C;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .navbar-title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  
+  .fce-bold {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1;
+  }
+  
+  .fce-subtitle {
+    font-size: 12px;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .profile-image {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }  
+
+  .sidebar-panel {
+    position: fixed;
+    top: 64px; // altura del navbar
+    left: 0;
+    width: max-content;
+    height: calc(100% - 64px);
+    background-color: #f4f6f8;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  @media screen and (max-width: 992px) {
+    .logo-fce {
+        clip-path: inset(0% 70% 0% 0%);
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo-fce {
+        clip-path: inset(0% 70% 0% 0%);
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo-fce {
+        clip-path: inset(0% 70% 0% 0%);
+        overflow: hidden;
+    }
+
+
+
+    .btn {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .logo-fce {
+        clip-path: inset(0% 70% 0% 0%);
+        overflow: hidden;
+    }
+}

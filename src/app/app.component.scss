@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; // ocupa toda la pantalla
+
+    margin: 0 !important;
+    //padding: 0 !important;
+    overflow: auto !important;
+    //height: auto !important;
+    //width: auto !important;
+    position: static !important;
+    z-index: auto !important;
+    pointer-events: auto !important;
+}
+
+.content {
+    flex: 1; // ocupa el espacio restante debajo del navbar
+    overflow: hidden; // previene scroll innecesario
+    padding: 5px;
+
+    margin: 0 !important;
+    //padding: 0 !important;
+    overflow: auto !important;
+    //height: auto !important;
+    //width: auto !important;
+    position: static !important;
+    z-index: auto !important;
+    pointer-events: auto !important;
+}

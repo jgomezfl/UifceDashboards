@@ -1,0 +1,105 @@
+  .login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    min-height: 100vh;
+    
+    background: #e6f0f8;
+    padding: 1.5rem;
+  }
+  
+  .login-card {
+    display: flex;
+    background: white;
+    border-radius: 32px;
+    overflow: hidden;
+    max-width: 1000px; // más ancho
+    height: 600px;     // más alto
+    width: 100%;
+  
+    // Sombra más pronunciada
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .left-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  
+    img {
+      max-width: 90%;
+      height: auto;
+    }
+  }
+  
+  .right-panel {
+    background: #034C8C; // Azul institucional
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    .header {
+      text-align: left;
+      margin-bottom: 2rem;
+  
+      h2 {
+        margin: 0;
+        color: white;
+        font-size: 3rem;
+      }
+  
+      p {
+        margin: 0.5rem 0 0;
+        color: white;
+      }
+    }
+  
+    .links {
+      margin-top: 1.5rem;
+      text-align: center;
+
+      span {
+        color: white;
+      }
+  
+      a {
+        font-size: 0.95rem;
+        color: white;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  ::ng-deep .mat-form-field {
+    .mat-input-element {
+        color: white;
+    }
+    .mat-form-field-label {
+        color: white;
+    }
+    .mat-form-field-underline {
+        background-color: white;
+    }
+    .mat-form-field-ripple {
+        background-color: white;
+    }
+    .mat-form-field-required-marker {
+        color: white;
+    }
+}
+  

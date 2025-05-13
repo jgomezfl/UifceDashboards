@@ -1,0 +1,35 @@
+// .custom-input-container {
+//     // width: 100%;
+//     // max-width: 400px; // 👈 Cambia este valor si lo quieres más angosto o ancho
+//     // margin: 0 auto;
+// }
+
+.custom-input {
+    width: 100%;
+    max-width: 380px;
+    height: 30px;
+    padding: 12px 16px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.full-width {
+  width: 100%;
+}
+
+::ng-deep .mdc-notched-outline > * {
+    border-color: white !important;
+}
+  
+::ng-deep .mdc-text-field--focused .mdc-notched-outline > * {
+    border-color: white !important;
+}
+  
+::ng-deep .mdc-text-field--invalid .mdc-notched-outline > * {
+    border-color: white !important;
+}

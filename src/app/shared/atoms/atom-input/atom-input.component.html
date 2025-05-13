@@ -1,0 +1,29 @@
+<!-- <div>
+    <input 
+        [type]="type"
+        [placeholder]="placeholder"
+        [formControl]="control"
+        class="custom-input"
+    />
+</div> -->
+<mat-form-field appearance="outline" class="full-width" *ngIf="type === 'text'">
+    <mat-label style="color: white;">{{ label }}</mat-label>
+    <input style="color: white;" matInput [type]="type" [formControl]="control" />
+</mat-form-field>
+
+    
+<mat-form-field appearance="outline" class="full-width" *ngIf="type === 'password'">
+    <mat-label style="color: white;">{{ label }}</mat-label>
+    <input style="color: white;" matInput [type]="hide ? 'password' : 'text'" [formControl]="control" />
+
+    <button
+    mat-icon-button
+    matSuffix
+    (click)="toggleVisibility()"
+    [attr.aria-label]="'Hide password'"
+    [attr.aria-pressed]="!hide"
+    type="button"
+    >
+        <mat-icon style="color: white;">{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+    </button>
+</mat-form-field>

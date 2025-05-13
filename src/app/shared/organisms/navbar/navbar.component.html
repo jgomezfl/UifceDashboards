@@ -1,0 +1,32 @@
+<mat-toolbar color="primary" class="navbar">
+    <button *ngIf="isAuthenticated" mat-icon-button (click)="toggleSidebar()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <!-- <button mat-icon-button (click)="toggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+  
+    <div class="navbar-title">
+        <img class="img-fluid rounded logo-fce" loading="lazy" src="./assets/images/LogoFCE1.png" width="220" height="130" alt="fce_logo">
+    </div>
+  
+    <span class="spacer"></span>
+  
+    <div class="profile" (click)="openLogoutDialog()">
+      <img src="./assets/images/LogoUIFCE3.png" alt="Logo UIFCE" class="profile-image" />
+    </div>
+
+    <ng-template>
+      <div mat-dialog-content>
+        <p>¿Está seguro de que desea cerrar sesión?</p>
+      </div>
+      <div mat-dialog-actions>
+        <button mat-button (click)="logout()">Sí</button>
+        <button mat-button mat-dialog-close>No</button>
+      </div>
+    </ng-template>
+    
+  </mat-toolbar>  
+
+  <app-sidebar *ngIf="showSidebar" class="sidebar-panel"></app-sidebar>

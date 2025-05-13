@@ -1,0 +1,85 @@
+{
+  "result":  [
+    {
+        "idSchedule": 2,
+        "startTime": "10:00:00",
+        "endTime": "11:30:00",
+        "startDate": "2024-04-05",
+        "endDate": "2024-04-05",
+        "observation": "Strategy session for Q2 marketing goals.",
+        "workgroup": 30,
+        "organizer": "Jane Smith",
+        "location": {
+          "idLocation": 2,
+          "building": { "idBuilding": 1, "buildingCode": "CODE_310" },
+          "room": { "idRoom": 2, "roomType": "ROOM_102" }
+        },
+        "activity": {
+          "idActivity": 2,
+          "event": "Science Fair",
+          "description": "Exploring Physics"
+        },
+        "user": {
+          "firstName": "Jane",
+          "lastName": "Smith",
+          "email": "jane.smith2@example.com",
+          "role": { "memberRole": "MONITOR" }
+        },
+        "days": [{ "weekday": "TUESDAY" }, { "weekday": "THURSDAY" }]
+      },
+      {
+        "idSchedule": 3,
+        "startTime": "12:00:00",
+        "endTime": "13:30:00",
+        "startDate": "2024-04-06",
+        "endDate": "2024-04-06",
+        "observation": "Cancelled due to scheduling conflicts.",
+        "workgroup": 15,
+        "organizer": "Alice Johnson",
+        "location": {
+          "idLocation": 3,
+          "building": { "idBuilding": 1, "buildingCode": "CODE_310" },
+          "room": { "idRoom": 3, "roomType": "ROOM_103" }
+        },
+        "activity": {
+          "idActivity": 3,
+          "event": "Art Exhibition",
+          "description": "Modern Art Display"
+        },
+        "user": {
+          "firstName": "Alice",
+          "lastName": "Johnson",
+          "email": "alice.johnson3@example.com",
+          "role": { "memberRole": "COORDINATOR" }
+        },
+        "days": [{ "weekday": "WEDNESDAY" }]
+      },
+      {
+        "idSchedule": 4,
+        "startTime": "14:00:00",
+        "endTime": "15:30:00",
+        "startDate": "2024-04-07",
+        "endDate": "2024-04-07",
+        "observation": "Technical review with development team.",
+        "workgroup": 25,
+        "organizer": "Bob Williams",
+        "location": {
+          "idLocation": 4,
+          "building": { "idBuilding": 1, "buildingCode": "CODE_310" },
+          "room": { "idRoom": 4, "roomType": "ROOM_104" }
+        },
+        "activity": {
+          "idActivity": 4,
+          "event": "Coding Bootcamp",
+          "description": "Learn to code in Python"
+        },
+        "user": {
+          "firstName": "Bob",
+          "lastName": "Williams",
+          "email": "bob.williams4@example.com",
+          "role": { "memberRole": "ADMINISTRATOR" }
+        },
+        "days": [{ "weekday": "WEDNESDAY" }, { "weekday": "THURSDAY" }]
+      }
+]
+}

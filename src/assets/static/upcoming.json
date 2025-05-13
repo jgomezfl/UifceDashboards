@@ -1,0 +1,85 @@
+{
+    "result": [
+    {
+        "idSchedule": 8,
+        "startTime": "12:30:00",
+        "endTime": "14:00:00",
+        "startDate": "2024-04-04",
+        "endDate": "2024-04-04",
+        "observation": "Cancelled: Venue unavailable.",
+        "workgroup": 8,
+        "organizer": "Fiona Garcia",
+        "location": {
+          "idLocation": 8,
+          "building": { "idBuilding": 1, "buildingCode": "CODE_310" },
+          "room": { "idRoom": 8, "roomType": "ROOM_203" }
+        },
+        "activity": {
+          "idActivity": 8,
+          "event": "Chess Tournament",
+          "description": "Chess matches for all levels"
+        },
+        "user": {
+          "firstName": "Alice",
+          "lastName": "Johnson",
+          "email": "alice.johnson3@example.com",
+          "role": { "memberRole": "COORDINATOR" }
+        },
+        "days": [{ "weekday": "MONDAY" }]
+      },
+      {
+        "idSchedule": 9,
+        "startTime": "14:30:00",
+        "endTime": "16:00:00",
+        "startDate": "2024-04-05",
+        "endDate": "2024-04-05",
+        "observation": "Sales team performance review.",
+        "workgroup": 10,
+        "organizer": "George Martinez",
+        "location": {
+          "idLocation": 9,
+          "building": { "idBuilding": 1, "buildingCode": "CODE_310" },
+          "room": { "idRoom": 9, "roomType": "ROOM_204" }
+        },
+        "activity": {
+          "idActivity": 9,
+          "event": "Music Lessons",
+          "description": "Guitar for beginners"
+        },
+        "user": {
+          "firstName": "Bob",
+          "lastName": "Williams",
+          "email": "bob.williams4@example.com",
+          "role": { "memberRole": "ADMINISTRATOR" }
+        },
+        "days": [{ "weekday": "TUESDAY" }]
+      },
+      {
+        "idSchedule": 10,
+        "startTime": "16:30:00",
+        "endTime": "18:00:00",
+        "startDate": "2024-04-06",
+        "endDate": "2024-04-06",
+        "observation": "Cancelled: Weather conditions.",
+        "workgroup": 20,
+        "organizer": "Hannah Rodriguez",
+        "location": {
+          "idLocation": 10,
+          "building": { "idBuilding": 1, "buildingCode": "CODE_310" },
+          "room": { "idRoom": 10, "roomType": "ROOM_205" }
+        },
+        "activity": {
+          "idActivity": 10,
+          "event": "Dance Workshop",
+          "description": "Introduction to Salsa"
+        },
+        "user": {
+          "firstName": "Charlie",
+          "lastName": "Brown",
+          "email": "charlie.brown5@example.com",
+          "role": { "memberRole": "MONITOR" }
+        },
+        "days": [{ "weekday": "WEDNESDAY" }]
+      }
+]
+}

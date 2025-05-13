@@ -1,0 +1,8 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <br/>
+    <app-atom-input label="Usuario Unal" type="text" [control]="emailControl" />
+    <app-atom-input label="Contraseña" type="password" [control]="passwordControl" />
+  
+    <br/><br/>
+    <app-atom-button text="Iniciar sesión" color="primary" type="submit" />
+  </form>

@@ -1,0 +1,16 @@
+<div class="login-wrapper">
+    <div class="login-card mat-elevation-z8">
+      <div class="left-panel">
+        <img loading="lazy" src="./assets/images/LogoUIFCE2.png" alt="Welcome" />
+      </div>
+      <div class="right-panel">
+        <div class="header">
+          <!-- Titulo y subitulo de componentes atómicos -->
+          <app-atom-label text="Bienvenido" size="title" />
+          <app-atom-label text="Inicia sesión en tu cuenta" size="subtitle" />
+        </div>
+        <app-mol-login-form (login)="onLogin($event)"></app-mol-login-form>
+      </div>
+    </div>
+  </div>
+  

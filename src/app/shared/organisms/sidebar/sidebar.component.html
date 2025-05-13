@@ -1,0 +1,23 @@
+<div @slideInOut class="sidebar-panel">
+  <mat-nav-list class="custom-sidebar">
+    <h1>Tableros</h1>
+    <!-- <mat-list-item class="section-title">
+      Tableros
+    </mat-list-item> -->
+  
+    <mat-expansion-panel class="custom-panel">
+      <mat-expansion-panel-header>
+        <mat-panel-title>Cursos Libres</mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-action-list>
+        <button mat-list-item [routerLink]="['/dashboard/freeCourses20241']" routerLinkActive="active">2024-1</button>
+        <button mat-list-item [routerLink]="['/dashboard/freeCourses20242']" routerLinkActive="active">2024-2</button>
+      </mat-action-list>
+    </mat-expansion-panel>
+  
+    <mat-list-item class="sidebar-item" [routerLink]="['/dashboard/teachingAssistant']" routerLinkActive="active">Asistencias Docentes</mat-list-item>
+    <mat-list-item class="sidebar-item" [routerLink]="['/dashboard/knowledgeManagement']" routerLinkActive="active">Gestión de Conocimiento</mat-list-item>
+    <mat-list-item class="sidebar-item" [routerLink]="['/dashboard/techStrategies']" routerLinkActive="active">Estrategias Tecnologicas</mat-list-item>
+    <mat-list-item class="sidebar-item" [routerLink]="['/dashboard/develop']" routerLinkActive="active">Desarrollo</mat-list-item>
+  </mat-nav-list>
+</div>

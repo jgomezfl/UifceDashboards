@@ -1,0 +1,21 @@
+// .atom-button {
+//     transition: color 0.3s ease;
+  
+//     &:hover {
+//       color: white !important;
+//     }
+//   }
+  
+
+  .login-btn {
+    width: 100%;
+    background: white !important;
+    color: #034C8C !important;
+    margin-top: 1rem;
+    padding: 0.75rem;
+
+    &:hover {
+      background: #0b2b45 !important;
+      color: white !important;
+    }
+  }
