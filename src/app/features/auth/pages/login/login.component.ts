@@ -20,10 +20,6 @@ export class LoginComponent {
 
     this.authService.login(credentials).subscribe({
       next: (res) => {
-        // console.log("Primera Respuesta");
-        // console.log(res);
-        // console.log("Segunda Respuesta");
-        // console.log();
         if(this.authService.userVerify(res)){
           this.router.navigate(['/dashboard']);
         }

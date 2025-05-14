@@ -1,6 +1,15 @@
-<h2 mat-dialog-title>Cerrar sesión</h2>
-<mat-dialog-content>¿Está seguro de que desea cerrar sesión?</mat-dialog-content>
-<mat-dialog-actions align="end">
-  <button mat-button (click)="onConfirm()">Sí</button>
-  <button mat-button (click)="onCancel()">No</button>
-</mat-dialog-actions>
+<div class="logout-dialog">
+  <h2 mat-dialog-title class="logout-title">
+    <mat-icon color="primary" class="logout-icon">exit_to_app</mat-icon>
+    Cerrar sesión
+  </h2>
+
+  <mat-dialog-content class="logout-content">
+    ¿Está seguro de que desea cerrar sesión?
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="center" class="logout-actions">
+    <button mat-stroked-button color="primary" (click)="onCancel()">No</button>
+    <button mat-raised-button color="primary" (click)="onConfirm()">Sí</button>
+  </mat-dialog-actions>
+</div>
