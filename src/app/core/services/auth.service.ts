@@ -20,6 +20,10 @@ export class AuthService {
     });
   }
 
+  logout(): void{
+    localStorage.removeItem('token');
+  }
+
   userVerify(response: LoginResponse): boolean{
     let email = response.user.email;
 
@@ -50,4 +54,5 @@ export class AuthService {
       return null;
     }
   }
+
 }

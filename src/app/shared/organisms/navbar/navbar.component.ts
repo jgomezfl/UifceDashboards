@@ -13,6 +13,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatDialogModule } from '@angular/material/dialog';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -37,7 +39,7 @@ export class NavbarComponent {
 
   // @ViewChild('sidebarTemplate') sidebarTemplate!: TemplateRef<any>;
 
-  constructor(private authService: AuthService, private dialog: MatDialog) {}
+  constructor(private authService: AuthService, private dialog: MatDialog, private router: Router) {}
 
   openLogoutDialog(): void {
     const dialogRef = this.dialog.open(MolLogoutDialogComponent);
@@ -50,7 +52,8 @@ export class NavbarComponent {
   }
 
   logout(): void {
-    // Lógica de logout (puedes ajustar según tu autenticación)
+    this.authService.logout();
+    this.router.navigate(['/login']);
     console.log('Sesión cerrada');
     // Aquí podrías llamar a tu servicio de autenticación para cerrar sesión
   }
