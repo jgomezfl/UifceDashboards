@@ -52,6 +52,7 @@ export class NavbarComponent {
   }
 
   logout(): void {
+    this.showSidebar = false;
     this.authService.logout();
     this.router.navigate(['/login']);
     console.log('Sesión cerrada');
